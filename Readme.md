@@ -1,20 +1,17 @@
-# Next.js 14 Project
+## Frontend Setup
 
-This is a Next.js 14 application designed for modern web development. It leverages server-side rendering, static site generation, and API routes, providing a robust framework for building web applications.
-
-## Features
-
-- **Server-side Rendering (SSR)**: Automatically renders pages on the server, improving SEO and performance.
-- **Static Site Generation (SSG)**: Pre-renders pages at build time, serving them as static files.
-- **API Routes**: Create API endpoints easily within the Next.js application.
-- **Built-in CSS and Sass Support**: Support for global and module styles.
-- **TypeScript Support**: Type safety for better development experience.
-- **Dynamic Routing**: Create routes dynamically based on your application needs.
-- **Middleware**: Implement authentication and other features in server-side logic.
-
-## Getting Started
-
-### Prerequisites
-
-- **Node.js**: Version 14 or later
-- **npm**: Version 5.6 or later, or Yarn
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file in the frontend folder for local development and populate it using `.env.example` as a reference.
+4. Create a `.env.production` file in the frontend folder for production settings.
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   Visit [http://localhost:7035](http://localhost:7035) in your browser to see the frontend.

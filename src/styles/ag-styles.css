@@ -5,7 +5,7 @@
   --ag-header-background-color: var(--ag-header-background);
   --ag-background-color: var(--ag-background);
   --ag-foreground-color: var(--ag-foreground);
-  --ag-odd-row-background-color: var(--ag-odd-row-background);
+  --ag-odd-row-background-color: var(--ag-background);
   --ag-row-height: 50px !important;
   --ag-row-hover-color: var(--ag-row-hover);
   --ag-font-family: 'Poppins', sans-serif;
