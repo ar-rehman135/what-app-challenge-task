@@ -4,7 +4,7 @@ import { ColDef } from '@ag-grid-community/core';
 import AgGridTable from '@/components/core/ag-table';
 import { IProducts, TableCols } from '@/lib/types';
 import { SpinnerIcon } from '@/assets/icons';
-import { HeaderCell } from './HeaderComponent';
+import { HeaderCell } from '../HeaderComponent';
 import { useSelectProductsMutation } from '@/store/features/auth/authApi';
 
 interface IProductsTable {
@@ -124,7 +124,9 @@ const ProductsTable: React.FC<IProductsTable> = ({
       await selectProduct({
         product_ids: [id],
       });
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

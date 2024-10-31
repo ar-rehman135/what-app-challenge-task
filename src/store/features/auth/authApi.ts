@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 import { apiSlice } from '../api/apiSlice';
 import { userLoggedIn } from './authSlice';
 import { ILoginResponse, IUser } from '@/lib/types';
-import { LOGIN_URL, PRODUCTS_URL, SELECt_PRODUCTS_URL } from './endpoints';
+import { LOGIN_URL, PRODUCTS_URL, SELECt_PRODUCTS_URL, SELECTED_PRODUCTS_URL } from './endpoints';
 
 export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
@@ -46,7 +46,7 @@ export const authApi = apiSlice.injectEndpoints({
         try {
           const result = await queryFulfilled;
         } catch (error: any) {
-          // toast.error(error.error.data.message);
+          console.error('Error fetching products');
         }
       },
     }),
@@ -68,10 +68,25 @@ export const authApi = apiSlice.injectEndpoints({
         }
       },
     }),
+    selectedProducts: builder.query({
+      query: (params) => ({
+        url: SELECTED_PRODUCTS_URL,
+        params,
+      }),
+      providesTags: ['Products'],
+      async onQueryStarted(arg, { queryFulfilled, dispatch }) {
+        try {
+          const result = await queryFulfilled;
+
+        } catch (error: any) {
+          console.error("Error fetching selections")
+        }
+      },
+    }),
   }),
   // @ts-ignore
   overrideExisting: module.hot?.status() === 'apply',
 });
 
-export const { useLoginMutation, useLazyGetProductsQuery, useSelectProductsMutation } =
+export const { useLoginMutation, useLazyGetProductsQuery, useSelectProductsMutation, useLazySelectedProductsQuery } =
   authApi;
