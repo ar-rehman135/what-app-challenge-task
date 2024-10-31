@@ -1,0 +1,12 @@
+export { CheckIcon } from './check';
+export { ChevronDownIcon } from './chevron-down';
+export { CopyIcon } from './copy';
+export { SpinnerIcon } from './spinner';
+export { EyeIcon } from './eye';
+export { EyeSlashIcon } from './eye-slash';
+export { EmailIcon } from './email';
+export { ChevronRightIcon } from './chevron-right';
+export { ChevronLeftIcon } from './chevron-left';
+export { Search } from './search';
+export { ArrowDownIcon } from './arrow-down';
+export { AvatarIcon } from './avatar';

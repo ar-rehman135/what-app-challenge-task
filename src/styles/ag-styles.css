@@ -1,0 +1,43 @@
+.ag-theme-alpine,
+.ag-theme-alpine-dark {
+  --ag-header-height: 50px !important;
+  --ag-header-foreground-color: var(--ag-header-foreground);
+  --ag-header-background-color: var(--ag-header-background);
+  --ag-background-color: var(--ag-background);
+  --ag-foreground-color: var(--ag-foreground);
+  --ag-odd-row-background-color: var(--ag-odd-row-background);
+  --ag-row-height: 50px !important;
+  --ag-row-hover-color: var(--ag-row-hover);
+  --ag-font-family: 'Poppins', sans-serif;
+  --ag-borders: none;
+  --ag-panel-border-color: red;
+  --ag-range-selection-border-style: none;
+  --ag-header-column-separator-display: block;
+  --ag-header-column-separator-height: 100%;
+  --ag-header-column-separator-width: 1px;
+  --ag-header-column-separator-color: var(--border);
+}
+.ag-theme-alpine .ag-header,
+.ag-theme-alpine-dark .ag-header {
+  border-top: 1px solid var(--border);
+}
+.ag-theme-alpine .ag-header-group-cell,
+.ag-theme-alpine-dark .ag-header-group-cell {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine-dark .ag-header-cell {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.ag-theme-alpine .ag-cell,
+.ag-theme-alpine-dark .ag-cell {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.ag-header-cell {
+  color: white;
+}
