@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const baseQueryWithAuth = fetchBaseQuery({
-  baseUrl: process.env.NEXT_PUBLIC_API_URL,
+  baseUrl: "https://whats-challenge-task-be.us.aldryn.io/api",
   credentials: 'same-origin',
   prepareHeaders: (headers) => {
     const token = localStorage.getItem('authToken');
